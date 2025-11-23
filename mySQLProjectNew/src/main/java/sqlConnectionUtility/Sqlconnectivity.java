@@ -7,9 +7,9 @@ public class Sqlconnectivity {
 
 //		String url = "jdbc:jtds:sqlserver://localhost:1433/STUDENT_DETAILS;user=arunthathi;password=Arunthathi!87;";
 
-		//String url = "jdbc:jtds:sqlserver://localhost:1433;DatabaseName=STUDENT_DETAILS;user=arunthathi;password=Arunthathi!87;";
+		String url = "jdbc:jtds:sqlserver://localhost:1433;DatabaseName=STUDENT_DETAILS;user=arunthathi;password=Arunthathi!87;";
 		//String url = "jdbc:sqlserver://localhost\\SQLEXPRESS;databaseName=STUDENT_DETAILS;encrypt=false;";
-		String url = "jdbc:jtds:sqlserver://localhost:1433;DatabaseName=STUDENT_DETAILS;";
+		//String url = "jdbc:jtds:sqlserver://localhost:1433;DatabaseName=STUDENT_DETAILS;";
         String user = "arunthathi";
         String password = "Arunthathi!87";
 		
