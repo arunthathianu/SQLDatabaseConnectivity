@@ -17,31 +17,36 @@ public class Sqlconnectivity {
 
         try (Connection conn = DriverManager.getConnection(url,user,password);
              Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery(query)) {
+             ResultSet rs = stmt.executeQuery(query)) 
+        {
 
             ResultSetMetaData meta = rs.getMetaData();
             int columnCount = meta.getColumnCount();
 
             // Print column headers
-            for (int i = 1; i <= columnCount; i++) {
+            for (int i = 1; i <= columnCount; i++) 
+            {
                 System.out.print(meta.getColumnName(i));
                 if (i < columnCount) System.out.print(" | ");
             }
             System.out.println();
 
             // Print rows
-            while (rs.next()) {
-                for (int i = 1; i <= columnCount; i++) {
+            while (rs.next()) 
+            {
+                for (int i = 1; i <= columnCount; i++) 
+                {
                     System.out.print(rs.getString(i));
                     if (i < columnCount) System.out.print(" | ");
                 }
                 System.out.println();
             }
 
-        } catch (SQLException e) {
+        } 
+        catch (SQLException e) 
+        {
             e.printStackTrace();
         }
     }
-
 
 }
