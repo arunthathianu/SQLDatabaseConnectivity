@@ -13,7 +13,7 @@ public class Sqlconnectivity {
         String user = "arunthathi";
         String password = "Arunthathi!87";
 		
-        String query = "SELECT * FROM STUDENT"; 
+        String query = "SELECT * FROM STUDENT";
 
         try (Connection conn = DriverManager.getConnection(url,user,password);
              Statement stmt = conn.createStatement();
